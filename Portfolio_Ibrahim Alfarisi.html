@@ -98,6 +98,15 @@
         .btn-shake:hover {
             animation: shake-bump 0.4s ease-out forwards;
         }
+
+        /* Floating Horizontal Animation untuk Badge */
+        @keyframes float-horizontal {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(15px); }
+        }
+        .animate-float-horizontal {
+            animation: float-horizontal 4s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-black selection:text-white relative">
@@ -166,7 +175,7 @@
                     </div>
                     
                     <!-- Floating Badge -->
-                    <div class="absolute top-10 -left-8 lg:-left-12 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-[float_6s_ease-in-out_infinite]">
+                    <div class="absolute bottom-12 -left-2 md:-left-8 lg:-left-12 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-xl flex items-center gap-4 z-20 animate-float-horizontal border border-white/60">
                         <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center">
                             <i class="ph-fill ph-code text-white text-2xl"></i>
                         </div>
@@ -259,7 +268,7 @@
                     <div class="flex items-center gap-3 text-sm font-bold text-slate-400 tracking-widest uppercase">
                         <span class="w-8 h-[2px] bg-slate-300"></span> Project 02
                     </div>
-                    <h2 class="text-5xl font-serif text-black leading-tight">Ciko's <br>Adventure</h2>
+                    <h2 class="text-5xl font-serif text-black leading-tight">Petualangan<br>Ciko</h2>
                     <p class="text-slate-600 leading-relaxed text-lg">
                         An engaging educational game designed to make learning fun and interactive for children. Built with highly optimized algorithms to ensure a smooth, lag-free gameplay experience.
                     </p>
@@ -280,7 +289,7 @@
                     <div class="flex items-center gap-3 text-sm font-bold text-slate-400 tracking-widest uppercase">
                         <span class="w-8 h-[2px] bg-slate-300"></span> Project 03
                     </div>
-                    <h2 class="text-5xl font-serif text-black leading-tight">Fast-Paced <br>Platformer</h2>
+                    <h2 class="text-5xl font-serif text-black leading-tight">2D<br>Platformer</h2>
                     <p class="text-slate-600 leading-relaxed text-lg">
                         A dynamic 2D platformer prototype focusing on fluid character movement, tight user controls, and a modern UI/UX interface aesthetic.
                     </p>
